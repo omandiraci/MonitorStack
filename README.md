@@ -1,45 +1,32 @@
 # Monitoring Stack
 
-This repository contains a Docker Compose configuration for a monitoring stack with the following components:
+A Docker Compose based monitoring solution with the following components:
 
 ## Components
 
-1. **Prometheus**
-   - Monitoring and alerting toolkit
-   - Port: 9090
-   - Configuration file: `prometheus_config/prometheus.yml`
+- **Prometheus**: Metrics collection and alerting
+- **Grafana**: Visualization and dashboards
+- **cAdvisor**: Container monitoring
+- **Node Exporter**: System metrics exporter
 
-2. **Grafana**
-   - Visualization and dashboard platform
-   - Port: 3000
-   - Default credentials: admin/admin
+## Quick Start
 
-3. **cAdvisor**
-   - Container monitoring tool
-   - Port: 8080
-   - Monitors Docker containers
-
-4. **Node Exporter**
-   - Hardware and OS metrics exporter
-   - Port: 9100
-   - Collects system metrics
-
-## Getting Started
-
-1. Clone this repository
-2. Run the stack:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/monitoring-stack.git
+   ```
+2. Start the stack:
    ```bash
    docker-compose up -d
    ```
 3. Access the services:
    - Prometheus: http://localhost:9090
-   - Grafana: http://localhost:3000
+   - Grafana: http://localhost:3000 (admin/admin)
    - cAdvisor: http://localhost:8080
-   - Node Exporter: http://localhost:9100
 
-## Configuration
+## Documentation
 
-To configure Prometheus, edit the `prometheus_config/prometheus.yml` file.
+For detailed configuration and usage instructions, see the [guide.md](guide.md) file.
 
 ## License
 
