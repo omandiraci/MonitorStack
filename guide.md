@@ -19,7 +19,7 @@ Bu kılavuz, monitoring stack'in kurulumu, yapılandırması ve kullanımı hakk
 ### 2.2. Kurulum
 1. Projeyi klonlayın:
    ```bash
-   git clone https://github.com/your-repo/monitoring-stack.git
+   git clone https://github.com/omandiraci/MonitorStack.git
    cd monitoring-stack
    ```
 
